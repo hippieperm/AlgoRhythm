@@ -16,3 +16,27 @@
 	입력: " fly me to the moon "
 	출력: 4
 	설명: "moon"의 길이는 4입니다. */
+
+void main() {
+  Solution().lengthOfLastWord("Hello World");
+  Solution().lengthOfLastWord("   fly me   to   the moon  ");
+  Solution().lengthOfLastWord("luffy is still joyboy");
+}
+
+class Solution {
+  int lengthOfLastWord(String s) {
+    int length = 0;
+    int i = s.length - 1; //맨 마지막 인덱스를 가르키기 위해서 (전체길이 -1)
+
+    while (i >= 0 && s[i] == ' ') {
+      i--;
+    }
+
+    while (i >= 0 && s[i] != ' ') {
+      length++;
+      i--;
+    }
+
+    return length;
+  }
+}
