@@ -19,7 +19,7 @@
 	설명: 공백을 제외해도 "raceacar"는 팰린드롬이 아닙니다. */
 
 void main() {
-  // Solution().isPalindrome("A man, a plan, a canal: Panama");
+  Solution().isPalindrome("A man, a plan, a canal: Panama");
   Solution().isPalindrome("race a car");
 }
 
